@@ -1,0 +1,24 @@
+/* root color configure */
+:root {
+    --background-color: #bfb5af;
+    --text-color: #582c4d;
+    --link-color: #a26769;
+    --highlight-color: #ece2d0;
+    --backup-color: #d5b9b2;
+}
+
+
+
+/* Elements to apply to entire page */
+
+/* Main Body Styling */
+body {
+    background-color: var(--background-color);
+}
+
+/* Header Styling */
+header {
+    background-color: var(--backup-color);
+    padding: 1em;
+    text-align: right;
+}
