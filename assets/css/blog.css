@@ -20,6 +20,18 @@ h2 {
     text-shadow: 2px 2px 5px black;
 }
 
+/* Back Button Styling */
+.backbutton {
+    background-color: var(--link-color);
+    color: var(--highlight-color);
+    border-radius: 5px;
+    padding: 0.5em;
+    margin-top: .5em;
+    cursor: pointer;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
     /* footer styling */
     footer {
         background-color: var(--backup-color);
