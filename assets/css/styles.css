@@ -23,6 +23,61 @@ header {
     text-align: right;
 }
 
+/* Main content styling */
+main {
+    display: flex;
+}
+
+/* split section widths to allow for spacing */
+section {
+    width: 40%;
+}
+
+.section-blogsphere {
+    float:left;
+}
+
+.section-rightside {
+    float:right;
+}
+/* Form Header Styling */
+h3 {
+    color: var(--text-color);
+    text-align: center;
+    font-size: 1.5em;
+}
+/* Form Styling */
+form {
+    background-color: var(--highlight-color);
+    width: 100%;
+    display: block;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 10px;
+}
+
+/* Sphere-Styling */
+.sphere {
+    height: 400px;
+    width: 400px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: repeating-linear-gradient(45deg, #a26769, #a26769 10px, #582c4d 10px, #582c4d 20px);
+    margin: 1em;
+}
+
+h2 {
+    color: var(--highlight-color);
+    text-align: center;
+    font-size: 2em;
+    position: relative;
+}
+
+/* Style Submit Button */
+
 /* footer styling */
 footer {
     background-color: var(--backup-color);
