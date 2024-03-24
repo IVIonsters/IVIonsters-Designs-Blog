@@ -10,6 +10,20 @@ html {
     font-family: 'Courier New', Courier, monospace;
 }
 
+/* Header Styling */
+header {
+    background-color: var(--backup-color);
+    padding: 1em;
+    border-bottom: solid 5px;
+    text-align: right;
+    width: auto;
+}
+
+h1 {
+    cursor: pointer;
+    font-size: 2.25em;
+}
+
 /* Form Header Styling */
 h3 {
     order: 1;
@@ -46,3 +60,4 @@ form label {
     color: var(--background-color);
     height: 100vh;
     }
+

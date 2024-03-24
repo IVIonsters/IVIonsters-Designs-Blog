@@ -20,21 +20,6 @@ body {
     background-color: var(--background-color);
 }
 
-/* Header Styling */
-header {
-    background-color: var(--backup-color);
-    padding: 1em;
-    border-bottom: solid 5px;
-    text-align: right;
-    width: auto;
-}
-
-h1 {
-    cursor: pointer;
-    font-size: 2.25em;
-}
-
-
 /* Main content styling */
 main {
     display: flex;
@@ -117,11 +102,4 @@ button {
     width: 100%;
     font-size: 1em;
     text-transform: uppercase;
-}
-
-/* footer styling */
-footer {
-    background-color: var(--backup-color);
-    padding: 1em;
-    text-align: center;
 }
