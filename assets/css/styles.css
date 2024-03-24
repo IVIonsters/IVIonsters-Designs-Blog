@@ -48,16 +48,7 @@ section {
     display: flex;
     flex-direction: column;
 }
-
-.section-blogsphere {
-    display: flex;
-}
-
-.section-rightside {
-    display: flex;
-}
-
-/* Sphere-Styling */
+/* left-side-box around sphere */
 .spherebox {
     display: flex;
     align-items: center;
@@ -71,6 +62,7 @@ section {
     min-width: 300px;
     margin-top: 1em;
 }
+/* Sphere-Styling */
 .sphere {
     height: 350px;
     width: 350px;
@@ -82,12 +74,27 @@ section {
     background: repeating-linear-gradient(45deg, #a26769, #a26769 10px, #582c4d 10px, #582c4d 20px);
     margin: 1em;
 }
-
+/* sphere text */
 h2 {
     color: var(--highlight-color);
     text-align: center;
     font-size: 2em;
     position: relative;
+}
+
+/* rightside box around form */
+.rightbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+    height: 80vh;
+    border: solid 5px;
+    padding: 7.5vh;
+    margin: 1em;
+    min-height: 400px;
+    min-width: 300px;
+    margin-top: 1em;
 }
 
 /* Style Submit Button */
