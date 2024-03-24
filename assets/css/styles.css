@@ -22,3 +22,10 @@ header {
     padding: 1em;
     text-align: right;
 }
+
+/* footer styling */
+footer {
+    background-color: var(--backup-color);
+    padding: 1em;
+    text-align: center;
+}
