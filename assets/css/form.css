@@ -1,0 +1,43 @@
+:root {
+    --background-color: #bfb5af;
+    --text-color: #582c4d;
+    --link-color: #a26769;
+    --highlight-color: #ece2d0;
+    -
+
+html {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Form Header Styling */
+h3 {
+    order: 1;
+    color: var(--text-color);
+    text-align: center;
+    font-size: 1.5em;
+}
+/* Form Styling */
+form {
+    background-color: var(--highlight-color);
+    width: 100%;
+    display: block;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 10px;
+    order: 2;
+}
+
+
+/* Light Mode */
+.light {
+    background-color: var(--text-color);
+    color: var(--background-color);
+    height: 100vh;
+    }
+
+/* Dark Mode */
+.dark {
+    background-color: var(--text-color);
+    color: var(--background-color);
+    height: 100vh;
+    }

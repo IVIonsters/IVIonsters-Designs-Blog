@@ -7,8 +7,6 @@
     --backup-color: #d5b9b2;
 }
 
-
-
 /* Elements to apply to entire page */
 
 /* Main Body Styling */
@@ -46,23 +44,6 @@ section {
     display: flex;
     justify-content: right;
     align-items: right;
-}
-/* Form Header Styling */
-h3 {
-    order: 1;
-    color: var(--text-color);
-    text-align: center;
-    font-size: 1.5em;
-}
-/* Form Styling */
-form {
-    background-color: var(--highlight-color);
-    width: 100%;
-    display: block;
-    padding: 1em;
-    margin: 1em;
-    border-radius: 10px;
-    order: 2;
 }
 
 /* Sphere-Styling */
