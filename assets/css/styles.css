@@ -7,13 +7,13 @@
     --backup-color: #d5b9b2;
 }
 
+/* Elements to apply to entire page */
 /* Remove margins and padding from all elements */
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-/* Elements to apply to entire page */
 
 /* Main Body Styling */
 body {
@@ -26,6 +26,7 @@ header {
     padding: 1em;
     border-bottom: solid 5px;
     text-align: right;
+    width: auto;
 }
 
 h1 {
@@ -48,39 +49,6 @@ section {
     display: flex;
     flex-direction: column;
 }
-/* left-side-box around sphere */
-.spherebox {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50vw;
-    height: 80vh;
-    border: solid 5px;
-    padding: 7.5vh;
-    margin: 1em;
-    min-height: 400px;
-    min-width: 300px;
-    margin-top: 1em;
-}
-/* Sphere-Styling */
-.sphere {
-    height: 350px;
-    width: 350px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    background: repeating-linear-gradient(45deg, #a26769, #a26769 10px, #582c4d 10px, #582c4d 20px);
-    margin: 1em;
-}
-/* sphere text */
-h2 {
-    color: var(--highlight-color);
-    text-align: center;
-    font-size: 2em;
-    position: relative;
-}
 
 /* rightside box around form */
 .rightbox {
@@ -90,22 +58,65 @@ h2 {
     width: 50vw;
     height: 80vh;
     border: solid 5px;
-    padding: 7.5vh;
-    margin: 1em;
+    padding: 3.5vh;
+    margin: .25em;
     min-height: 400px;
     min-width: 300px;
-    margin-top: 1em;
+    margin-top: .25em;
+}
+
+/* left-side-box around sphere */
+.spherebox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+    height: 80vh;
+    border: solid 5px;
+    padding: 3.5vh;
+    margin: .25em;
+    min-height: 400px;
+    min-width: 375px;
+    margin-top: .25em;
+}
+/* Sphere-Styling */
+.sphere {
+    height: 350px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: repeating-linear-gradient(45deg, #a26769, #a26769 10px, #582c4d 10px, #582c4d 20px);
+}
+/* sphere text */
+h2 {
+    color: var(--highlight-color);
+    text-align: center;
+    font-size: 2em;
+    position: relative;
+}
+
+/* Input Styling */
+#Username, 
+#Title,
+#Content {
+    width: 100%;
+    font-size: 1.5em;
+    height: fit-content;
 }
 
 /* Style Submit Button */
 button {
     background-color: var(--link-color);
     color: var(--highlight-color);
-    padding: 0.5em;
-    margin: 0.5em;
     border-radius: 5px;
-    border: none;
+    padding: 0.5em;
+    margin-top: .5em;
     cursor: pointer;
+    width: 100%;
+    font-size: 1em;
+    text-transform: uppercase;
 }
 
 /* footer styling */

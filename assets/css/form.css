@@ -1,3 +1,4 @@
+/* root color configure */
 :root {
     --background-color: #bfb5af;
     --text-color: #582c4d;
@@ -25,6 +26,10 @@ form {
     margin: 1em;
     border-radius: 10px;
     order: 2;
+}
+form label {
+    display: block;
+    margin: 0.5em;
 }
 
 
