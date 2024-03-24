@@ -7,6 +7,12 @@
     --backup-color: #d5b9b2;
 }
 
+/* Remove margins and padding from all elements */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 /* Elements to apply to entire page */
 
 /* Main Body Styling */
@@ -18,38 +24,56 @@ body {
 header {
     background-color: var(--backup-color);
     padding: 1em;
-    border-bottom: solid;
+    border-bottom: solid 5px;
     text-align: right;
 }
+
+h1 {
+    cursor: pointer;
+    font-size: 2.25em;
+}
+
 
 /* Main content styling */
 main {
     display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex: 1 1 40vw;
 }
 
 /* split section widths to allow for spacing */
 section {
-    width: 40%;
+    width: 45%;
     display: flex;
     flex-direction: column;
 }
 
 .section-blogsphere {
     display: flex;
-    justify-content: left;
-    align-items: left;
 }
 
 .section-rightside {
     display: flex;
-    justify-content: right;
-    align-items: right;
 }
 
 /* Sphere-Styling */
+.spherebox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+    height: 80vh;
+    border: solid 5px;
+    padding: 7.5vh;
+    margin: 1em;
+    min-height: 400px;
+    min-width: 300px;
+    margin-top: 1em;
+}
 .sphere {
-    height: 400px;
-    width: 400px;
+    height: 350px;
+    width: 350px;
     position: relative;
     display: flex;
     justify-content: center;
