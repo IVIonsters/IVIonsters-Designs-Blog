@@ -1,10 +1,22 @@
-// Define variablwes for light-Dark mode toggle
+// Define variables for light-Dark mode toggle
+const displaychange = document.getElementById('displaychange');
+const lightmode = document.querySelector('.lightmode');
 
-
-// Check for saved 'darkMode' in localStorage
+// set default mode to light mode
+let mode = 'light';
 
 // Event to change the theme based on user preference
-
+displaychange.addEventListener('click', function() {
 //  if light mode, change to dark mode
-
-//  if dark mode, change to light mode
+    if (mode === 'light') {
+        mode = 'dark';
+        lightmode.setAttribute(xxxxx);
+        displaychange.textContent = '🌒'
+    } 
+    //  if dark mode, change to light mode
+    else {
+        mode = 'light';
+        lightmode.setAttribute(xxxxx);
+        displaychange.textContent = '☀️'
+    }
+});
