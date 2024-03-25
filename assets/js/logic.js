@@ -12,11 +12,13 @@ displaychange.addEventListener('click', function() {
         mode = 'dark';
         lightmode.setAttribute(xxxxx);
         displaychange.textContent = '🌒'
+        console.log('dark mode');
     } 
     //  if dark mode, change to light mode
     else {
         mode = 'light';
         lightmode.setAttribute(xxxxx);
         displaychange.textContent = '☀️'
+        console.log('light mode');
     }
 });
