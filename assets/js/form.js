@@ -38,5 +38,9 @@ function savePost() {
     }
 }
 
+// save posts to local storage, and log to console
+localStorage.setItem('blogPosts', JSON.stringify(blogPosts));
+console.log('Post saved to local storage!');
 
-// clear form fields, if all data is correct proceed to blog page.
+// swtich to blog page once post is saved
+window.location.href = 'blog.html';
