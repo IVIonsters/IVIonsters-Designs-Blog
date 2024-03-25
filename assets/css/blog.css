@@ -39,7 +39,8 @@ h2 {
     justify-content: center;
     text-align: center;
     margin-top: 20px;
-    margin-right: -82%;
+    margin-right: -75%;
+    cursor: pointer;
 }
 
     /* footer styling */
@@ -47,6 +48,7 @@ h2 {
         background-color: var(--backup-color);
         padding: 1em;
         text-align: left;
+        width: auto;
     }
 
     footer p {

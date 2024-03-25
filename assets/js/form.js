@@ -1,5 +1,8 @@
 // collect user input for username, title , content:
-
+usernameE1 = document.getElementById('username');
+titleE1 = document.getElementById('title');
+contentE1 = document.getElementById('content');
+submitButton = document.getElementById('submit');
 // collect submit button information as variable:
 
 // create issue if no information is entered - should link this html for unanswered questions -- ALERT
