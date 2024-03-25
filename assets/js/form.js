@@ -1,15 +1,16 @@
 // collect user input for username, title , content:
-usernameE1 = document.getElementById('username');
-titleE1 = document.getElementById('title');
-contentE1 = document.getElementById('content');
+let usernameE1 = document.getElementById('username');
+let titleE1 = document.getElementById('title');
+let contentE1 = document.getElementById('content');
 
 // collect submit button information as variable:
-submitButton = document.getElementById('submit');
+let submitButton = document.getElementById('submit');
 
 // add click funciton to submit button
 submitButton.addEvenlistener('click', function(event){
     event.preventDefault();
     console.log('submit button clicked');
+
 // check for blanks fields, or any errors in user input
     if (usernameE1.value === '' || titleE1.value === '' || contentE1.value === ''){
         alert('Please enter all data!');
@@ -20,24 +21,22 @@ submitButton.addEvenlistener('click', function(event){
     }
 });
     
+function savePost() {
+    // Define variable for posts
+    const blogInput = {
+        username: usernameE1.value.trim(),
+        title: titleE1.value.trim(),
+        content: contentE1.value.trim()
+    };
 
-//pull data from local storage, if no data, create empty array
-
-
-// event listener for submit button
-    // prevent default action? 
-
-
-// check if any field was left blank , or has error. If so, alert user to fill in all fields
-
-
-// create object with user input
-
-
-// push object to array
-
-
-// save array to local storage
+    // check for saved posts in local storage, if none create empty array
+    var blogPosts = JSON.parse(localStorage.getItem('blogPosts'));
+    if (blogPosts === null) {
+        blogPosts = [];
+    } else {
+        blogPosts.push(blogInput);
+    }
+}
 
 
 // clear form fields, if all data is correct proceed to blog page.
