@@ -7,19 +7,19 @@ let contentE1 = document.getElementById('content');
 let submitButton = document.getElementById('submit');
 
 // add click funciton to submit button
-submitButton.addEvenlistener('click', function(event){
+submitButton.addEventlistener('click', function(event){
     event.preventDefault();
     console.log('submit button clicked');
-
+    
 // check for blanks fields, or any errors in user input
-    if (usernameE1.value === '' || titleE1.value === '' || contentE1.value === ''){
+    if (usernameE1.value.trim() === '' || titleE1.value.trim() === '' || contentE1.value.trim() === '') {
         alert('Please enter all data!');
     } // if all data is entered, log to console and save post 
     else {
         console.log('all data entered');
         savePost();
     }
-});
+})
     
 function savePost() {
     // Define variable for posts
@@ -30,7 +30,7 @@ function savePost() {
     };
 
     // check for saved posts in local storage, if none create empty array
-    var blogPosts = JSON.parse(localStorage.getItem('blogPosts'));
+    let blogPosts = JSON.parse(localStorage.getItem('blogPosts'));
     if (blogPosts === null) {
         blogPosts = [];
     } else {
