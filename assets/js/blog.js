@@ -20,22 +20,25 @@ function postBlog() {
             console.log(blog.content)
 
             const li = document.createElement('li');
-            li.setAtrribute('class', 'blog-post');
-    }
+            li.setAtrribute('class', 'blog-post'); 
+        // NEED TO REVIST THIS SECTION --- ATTACHING TO BLOG MAIN NOT WORKING
+
+        let title = document.createElement('h2');
+        let username = document.createElement('p');
+        let content = document.createElement('p');
+
+        title.textContent = blog.title;
+        content.textContent = blog.content;
+        content.id
+        username.textContent = `By: ${blog.username}`;
+        username.id = 'username';
+
+        blogMain.appendChild(li);
+        li.append(title, username, content);
+        }
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 // create an init() function that starts when page is loaded
     function init() {
             //  when init() function is executed, render the blog to webpage
