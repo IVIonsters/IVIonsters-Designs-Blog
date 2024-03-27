@@ -1,18 +1,18 @@
 // collect user input for username, title , content:
-let usernameE1 = document.getElementById('username');
-let titleE1 = document.getElementById('title');
-let contentE1 = document.getElementById('content');
+let usernameE1 = document.getElementById("username");
+let titleE1 = document.getElementById("title");
+let contentE1 = document.getElementById("content");
 
 // collect submit button information as variable:
-let submitButton = document.getElementById('submit');
+let submitButton = document.getElementById("submit");
 
 // add click funciton to submit button
-submitButton.addEventlistener('click', function(event){
+submitButton.addEventListener("click", function (event) {
     event.preventDefault();
     console.log('submit button clicked');
     
-// check for blanks fields, or any errors in user input
-    if (usernameE1.value.trim() === '' || titleE1.value.trim() === '' || contentE1.value.trim() === '') {
+    // check for blanks fields, or any errors in user input
+    if (usernameE1.value.trim() == '' || titleE1.value.trim() == '' || contentE1.value.trim() == '') {
         alert('Please enter all data!');
     } // if all data is entered, log to console and save post 
     else {

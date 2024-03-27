@@ -84,9 +84,9 @@ h2 {
 }
 
 /* Input Styling */
-#Username, 
-#Title,
-#Content {
+#username, 
+#title,
+#content {
     width: 100%;
     font-size: 1.5em;
     height: fit-content;
