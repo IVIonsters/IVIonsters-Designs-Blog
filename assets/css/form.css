@@ -1,11 +1,3 @@
-/* root color configure */
-:root {
-    --lightmodebackground: #f4d8cd;
-    --lightmodetext: #edb183;
-    --darkmodebackground: #31363F;
-    --darkmodetext: #76ABAE;
-}
-
 html {
     font-family: 'Courier New', Courier, monospace;
 }

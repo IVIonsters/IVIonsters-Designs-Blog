@@ -1,7 +1,7 @@
 /* root color configure */
 :root {
-    --lightmodebackground: #f4d8cd;
-    --lightmodetext: #edb183;
+    --lightmodebackground: #F4E3B2;
+    --lightmodetext: #050517;
     --darkmodebackground: #31363F;
     --darkmodetext: #76ABAE;
 }
@@ -74,15 +74,14 @@ section {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    background: repeating-linear-gradient(45deg, #a26769, #a26769 10px, #582c4d 10px, #582c4d 20px);
+    background: repeating-linear-gradient(45deg, #F4E3B2, #F4E3B2 10px, #D3D5D7 10px, #D3D5D7 20px);
 }
 /* sphere text */
 h2 {
-    color: #EEEEEE;
+    color: var(--lightmodetext);
     text-align: center;
     font-size: 2em;
     position: relative;
-    text-shadow: 2px 2px 5px black;
 }
 
 /* Input Styling */
@@ -114,6 +113,17 @@ button {
     height: 100vh;
     }
 
+.light h2 {
+    color: var(--lightmodetext);
+    text-align: center;
+    font-size: 2em;
+    position: relative;
+}
+
+.light .sphere {
+    background: repeating-linear-gradient(45deg, #F4E3B2, #F4E3B2 10px, #D3D5D7 10px, #D3D5D7 20px);
+}
+
 /* Dark Mode */
 .dark {
     background-color: var(--darkmodebackground);
@@ -125,8 +135,7 @@ button {
     color: var(--darkmodetext);
     text-align: center;
     font-size: 2em;
-    position: relative;
-    text-shadow: 2px 2px 5px black;
+    position: relative; 
 }
 
 .dark .sphere {
