@@ -12,8 +12,9 @@ Personal Blog for IVIonsters Designs along my coding journey!
 
 
 ## Description
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    Multi-page blog designed to allow the hosting of personal blogs and thoughts! 
+    This blog is usable by all and the information is stored locally on your browser, all thoughts are safe!
+    Share some thoughts, enjoy the project! 
 
 ## Languages
 
@@ -23,15 +24,17 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 ## Features
 
-* **Insert Feature:** INSERT FEATURE DESCRIPTION HERE PLEASE--- DON'T FORGET IT'S IMPORTANTE MAHN!
-* **Insert Feature:** INSERT FEATURE DESCRIPTION HERE PLEASE--- DON'T FORGET IT'S IMPORTANTE MAHN!
-* **Insert Feature:** INSERT FEATURE DESCRIPTION HERE PLEASE--- DON'T FORGET IT'S IMPORTANTE MAHN!
-* **Insert Feature:** INSERT FEATURE DESCRIPTION HERE PLEASE--- DON'T FORGET IT'S IMPORTANTE MAHN!
-* **Insert Feature:** INSERT FEATURE DESCRIPTION HERE PLEASE--- DON'T FORGET IT'S IMPORTANTE MAHN!
+* **Alert Feature:** Project integrates JavaScript and .Alert feature to alert user if not all information is entered pertaining to blog requirements.
+* **light / Dark Mode:** Blog features a toggle-able light and dark mode feature with correct images in header to switch modes. 
+* **Form and Submission:** Blog has a fully functional form and submission feature to save history of written blogs.
+* **Local Storage Feature:** Blogs will automatically be stored and be pulled from local storage.
+* **Automated Posting:** Project features JavaScript code to automatically style and post new blogs with no input from user.
+* **!! FOR DEVELOPERS ONLY !!:** Project features several console.log statements to display data acceptance along the code route.
 
 ## Usage
 
-* DEFINE USAGE HERE PLEASE PLEASE--- DON'T FORGET IT'S IMPORTANTE MAHN!
+* For general use, simply fill in the required fields and put blog information in content section. Press submit and your blogs will be listed on the next page! 
+*   Toggle-able dark and light mode in upper right hand corner of header. Click Sun / Moon
 
 * [PROJCET NAME live link](https://ivionsters.github.io/business-payroll-agent/)
 
