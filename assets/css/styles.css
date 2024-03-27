@@ -141,3 +141,12 @@ button {
 .dark .sphere {
     background: repeating-linear-gradient(45deg, #31363F, #31363F 10px, #1E555C 10px, #1E555C 20px);
 }
+
+.dark .backbutton {
+    background-color: #050517;
+    color: #D3D5D7;
+}
+
+.dark a {
+    color: var(--darkmodetext);
+}
