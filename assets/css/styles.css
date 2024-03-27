@@ -1,10 +1,9 @@
 /* root color configure */
 :root {
-    --background-color: #bfb5af;
-    --text-color: #582c4d;
-    --link-color: #a26769;
-    --highlight-color: #ece2d0;
-    --backup-color: #d5b9b2;
+    --lightmodebackground: #f4d8cd;
+    --lightmodetext: #edb183;
+    --darkmodebackground: #33313B;
+    --darkmodetext: #FDC57B;
 }
 
 /* Elements to apply to entire page */
@@ -17,7 +16,7 @@
 
 /* Main Body Styling */
 body {
-    background-color: var(--background-color);
+    background-color: var(--lightmodebackground);
 }
 
 /* Main content styling */
@@ -43,6 +42,7 @@ section {
     width: 50vw;
     height: 80vh;
     border: solid 5px;
+    border-color: black;
     padding: 3.5vh;
     margin: .25em;
     min-height: 400px;
@@ -58,6 +58,7 @@ section {
     width: 50vw;
     height: 80vh;
     border: solid 5px;
+    border-color: black;
     padding: 3.5vh;
     margin: .25em;
     min-height: 400px;
@@ -76,7 +77,7 @@ section {
 }
 /* sphere text */
 h2 {
-    color: var(--highlight-color);
+    color: var(--lightmodetext);
     text-align: center;
     font-size: 2em;
     position: relative;
@@ -94,8 +95,8 @@ h2 {
 
 /* Style Submit Button */
 button {
-    background-color: var(--link-color);
-    color: var(--highlight-color);
+    background-color: #a26769;
+    color: var(--lightmodetext);
     border-radius: 5px;
     padding: 0.5em;
     margin-top: .5em;
@@ -104,3 +105,17 @@ button {
     font-size: 1em;
     text-transform: uppercase;
 }
+
+/* Light Mode */
+.light {
+    background-color: var(--lightmodebackground);
+    color: var(--lightmodetext);
+    height: 100vh;
+    }
+
+/* Dark Mode */
+.dark {
+    background-color: var(--darkmodebackground);
+    color: var(--darkmodetext);
+    height: 100vh;
+    }

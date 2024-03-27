@@ -7,17 +7,17 @@ let mode = 'light';
 
 // Event to change the theme based on user preference
 displaychange.addEventListener('click', function() {
-//  if light mode, change to dark mode
+    //  if light mode, change to dark mode
     if (mode === 'light') {
         mode = 'dark';
-        lightmode.setAttribute(xxxxx);
+        lightmode.className = 'dark';
         displaychange.textContent = '🌒'
         console.log('dark mode');
     } 
     //  if dark mode, change to light mode
     else {
         mode = 'light';
-        lightmode.setAttribute(xxxxx);
+        lightmode.className = 'light';
         displaychange.textContent = '☀️'
         console.log('light mode');
     }

@@ -1,9 +1,9 @@
 /* root color configure */
 :root {
-    --background-color: #bfb5af;
-    --text-color: #582c4d;
-    --link-color: #a26769;
-    --highlight-color: #ece2d0;
+    --lightmodebackground: #f4d8cd;
+    --lightmodetext: #edb183;
+    --darkmodebackground: #3a2e39;
+    --darkmodetext: #324376;
 }
 
 html {
@@ -12,9 +12,9 @@ html {
 
 /* Header Styling */
 header {
-    background-color: var(--backup-color);
     padding: 1em;
     border-bottom: solid 5px;
+    border-color: black;
     text-align: right;
     width: auto;
 }
@@ -33,7 +33,6 @@ h3 {
 }
 /* Form Styling */
 form {
-    background-color: var(--highlight-color);
     width: 100%;
     display: block;
     padding: 1em;
@@ -45,19 +44,4 @@ form label {
     display: block;
     margin: 0.5em;
 }
-
-
-/* Light Mode */
-.light {
-    background-color: var(--text-color);
-    color: var(--background-color);
-    height: 100vh;
-    }
-
-/* Dark Mode */
-.dark {
-    background-color: var(--text-color);
-    color: var(--background-color);
-    height: 100vh;
-    }
 
