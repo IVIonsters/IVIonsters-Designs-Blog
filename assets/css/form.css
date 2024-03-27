@@ -2,8 +2,8 @@
 :root {
     --lightmodebackground: #f4d8cd;
     --lightmodetext: #edb183;
-    --darkmodebackground: #3a2e39;
-    --darkmodetext: #324376;
+    --darkmodebackground: #31363F;
+    --darkmodetext: #76ABAE;
 }
 
 html {
@@ -27,9 +27,9 @@ h1 {
 /* Form Header Styling */
 h3 {
     order: 1;
-    color: var(--text-color);
     text-align: center;
-    font-size: 1.5em;
+    font-size: 2em;
+
 }
 /* Form Styling */
 form {
@@ -39,9 +39,13 @@ form {
     margin: 1em;
     border-radius: 10px;
     order: 2;
+    font-size: 1.25em;
+
+
 }
 form label {
     display: block;
     margin: 0.5em;
+    
 }
 

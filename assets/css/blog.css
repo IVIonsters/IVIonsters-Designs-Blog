@@ -1,3 +1,10 @@
+/* root color configure */
+:root {
+    --lightmodebackground: #f4d8cd;
+    --lightmodetext: #edb183;
+    --darkmodebackground: #31363F;
+    --darkmodetext: #76ABAE;
+}
 
 /* Header Styling */
 header {
@@ -51,6 +58,7 @@ h2 {
     justify-content: center;
     gap: 20px;
     margin-top: 20px;
+    color: #000000;
 }
 
 #blog li {

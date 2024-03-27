@@ -2,9 +2,10 @@
 :root {
     --lightmodebackground: #f4d8cd;
     --lightmodetext: #edb183;
-    --darkmodebackground: #33313B;
-    --darkmodetext: #FDC57B;
+    --darkmodebackground: #31363F;
+    --darkmodetext: #76ABAE;
 }
+
 
 /* Elements to apply to entire page */
 /* Remove margins and padding from all elements */
@@ -77,7 +78,7 @@ section {
 }
 /* sphere text */
 h2 {
-    color: var(--lightmodetext);
+    color: #EEEEEE;
     text-align: center;
     font-size: 2em;
     position: relative;
@@ -95,8 +96,8 @@ h2 {
 
 /* Style Submit Button */
 button {
-    background-color: #a26769;
-    color: var(--lightmodetext);
+    background-color: #EEEEEE;
+    color: #222831;
     border-radius: 5px;
     padding: 0.5em;
     margin-top: .5em;
@@ -119,3 +120,15 @@ button {
     color: var(--darkmodetext);
     height: 100vh;
     }
+
+.dark h2 {
+    color: var(--darkmodetext);
+    text-align: center;
+    font-size: 2em;
+    position: relative;
+    text-shadow: 2px 2px 5px black;
+}
+
+.dark .sphere {
+    background: repeating-linear-gradient(45deg, #31363F, #31363F 10px, #1E555C 10px, #1E555C 20px);
+}
