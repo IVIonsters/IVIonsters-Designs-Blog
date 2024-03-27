@@ -21,7 +21,6 @@ function postBlog() {
 
             const li = document.createElement('li');
             li.setAttribute('data-index', i); 
-        // NEED TO REVIST THIS SECTION --- ATTACHING TO BLOG MAIN NOT WORKING
 
         let title = document.createElement('h2');
         let username = document.createElement('p');

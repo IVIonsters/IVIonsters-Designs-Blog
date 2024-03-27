@@ -115,7 +115,7 @@ button {
 
 .light h2 {
     color: var(--lightmodetext);
-    text-align: center;
+    text-align: left;
     font-size: 2em;
     position: relative;
 }
@@ -133,7 +133,7 @@ button {
 
 .dark h2 {
     color: var(--darkmodetext);
-    text-align: center;
+    text-align: left;
     font-size: 2em;
     position: relative; 
 }

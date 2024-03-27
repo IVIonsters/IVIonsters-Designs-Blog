@@ -12,7 +12,7 @@ submitButton.addEventListener("click", function (event) {
     console.log('submit button clicked');
     
     // check for blanks fields, or any errors in user input
-    if (usernameE1.value.trim() == '' || titleE1.value.trim() == '' || contentE1.value.trim() == '') {
+    if (usernameE1.value.trim() === '' || titleE1.value.trim() === '' || contentE1.value.trim() === '') {
         alert('Please enter all data!');
     } // if all data is entered, log to console and save post 
     else {
