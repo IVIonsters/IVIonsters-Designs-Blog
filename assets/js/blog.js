@@ -1,16 +1,16 @@
 // Define variables for back-button and link to index.html
-backButtonLink = document.getElementById('back-button');
-blogMain = document.getElementById('blog');
+backButtonLink = document.getElementById("back-button");
+blogMain = document.getElementById("blog");
 
 // add event listener to trigger back button
 backButtonLink.addEventListener('click', function() {
     window.location.href = 'index.html';
-});
+})
 
 // create function for blog post
 function postBlog() {
     // use Json.parse to get blog posts from local storage and convert to object
-    const blogPost = Json.parse(localStorage.getItem('blogPosts'));
+    const blogPost = JSON.parse(localStorage.getItem('blogPosts'));
     // see if data is returned, if not exit out of current function
     if (blogPost !== null){
         for ( let i = 0 ; i < blogPost.length; i++) {
@@ -20,7 +20,7 @@ function postBlog() {
             console.log(blog.content)
 
             const li = document.createElement('li');
-            li.setAtrribute('class', 'blog-post'); 
+            li.setAttribute('data-index', i); 
         // NEED TO REVIST THIS SECTION --- ATTACHING TO BLOG MAIN NOT WORKING
 
         let title = document.createElement('h2');
@@ -29,7 +29,7 @@ function postBlog() {
 
         title.textContent = blog.title;
         content.textContent = blog.content;
-        content.id
+        content.id = 'content';
         username.textContent = `By: ${blog.username}`;
         username.id = 'username';
 

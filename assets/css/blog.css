@@ -43,12 +43,32 @@ h2 {
     cursor: pointer;
 }
 
+/* Blog Post Styling */
+#blog {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+#blog li {
+    border: solid 3px;
+    list-style: none;
+}
+
+
     /* footer styling */
     footer {
         background-color: var(--backup-color);
         padding: 1em;
         text-align: left;
         width: auto;
+        margin-top: 20px;
+        border-top: solid 5px;
+        outline: solid 5px;
+        outline-offset: 5px;
     }
 
     footer p {

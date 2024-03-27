@@ -30,17 +30,17 @@ function savePost() {
     };
 
     // check for saved posts in local storage, if none create empty array
-    let blogPosts = JSON.parse(localStorage.getItem('blogPosts'));
-    if (blogPosts === null) {
-        blogPosts = [];
+    var blogPost = JSON.parse(localStorage.getItem('blogPosts'));
+    if (blogPost === null) {
+        blogPost = [blogInput];
     } else {
-        blogPosts.push(blogInput);
+        blogPost.push(blogInput);
     }
+
+    // save posts to local storage, and log to console
+    localStorage.setItem('blogPosts', JSON.stringify(blogPost));
+    console.log('Post saved to local storage!');
+
+    // switch to blog page once post is saved
+    window.location.href = 'blog.html';
 }
-
-// save posts to local storage, and log to console
-localStorage.setItem('blogPosts', JSON.stringify(blogPosts));
-console.log('Post saved to local storage!');
-
-// swtich to blog page once post is saved
-window.location.href = 'blog.html';
