@@ -22,9 +22,10 @@ function postBlog() {
             const li = document.createElement('li');
             li.setAttribute('data-index', i); 
 
-        let title = document.createElement('h2');
+        let title = document.createElement('h4');
         let username = document.createElement('p');
-        let content = document.createElement('p');
+        let content = document.createElement('p'); 
+        content.classList.add('content');
 
         title.textContent = blog.title;
         content.textContent = blog.content;

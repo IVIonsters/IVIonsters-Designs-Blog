@@ -113,11 +113,13 @@ button {
     height: 100vh;
     }
 
-.light h2 {
+.light h4 {
     color: var(--lightmodetext);
     text-align: left;
-    font-size: 2em;
+    font-size: 2.3em;
     position: relative;
+    padding: 5px;
+    text-transform: uppercase;
 }
 
 .light .sphere {
@@ -133,9 +135,18 @@ button {
 
 .dark h2 {
     color: var(--darkmodetext);
-    text-align: left;
+    text-align: center;
     font-size: 2em;
     position: relative; 
+}
+
+.dark h4 {
+    color: var(--darkmodetext);
+    text-align: left;
+    font-size: 2.3em;
+    position: relative;
+    padding: 5px;
+    text-transform: uppercase;
 }
 
 .dark .sphere {
